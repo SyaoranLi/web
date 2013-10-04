@@ -99,6 +99,118 @@
 		width: auto;
 	}
 
+
+/*********************************************************************************/
+/* Historial List Styles                                                                   */
+/*********************************************************************************/
+ul.style3_h
+	{
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		list-style: none;
+		color: #6c6c6c
+	}
+	
+	ul.style3_h li
+	{
+		overflow: hidden;
+		display: block;
+		padding: 1em 0em 0em 0em;
+		margin: 0 0 2em 0;
+		border-top: 1px solid #D1CFCE;
+	}
+	
+	ul.style3_h li:first-child
+	{
+		padding-top: 0;
+		border-top: none;
+	}
+	
+	ul.style3_h p
+	{
+		margin: 0;
+	}
+	
+	ul.style3_h a
+	{
+		display: block;
+		text-decoration: none;
+		color: #2D2D2D;
+	}
+	
+	ul.style3_h a:hover
+	{
+		text-decoration: underline;
+	}
+	
+	ul.style3_h h3
+	{
+		padding: 1.5em 0em 5px 0em;
+		font-size: 1.1em;
+		font-weight: 700;
+		color: #454445;
+	}
+	
+	ul.style3_h .first
+	{
+		padding-top: 0;
+		background: none;
+	}
+	
+	ul.style3_h .date
+	{
+		float: left;
+		position: relative;
+		width: 80px;
+		height: 70px;
+		margin: 1em 1.5em 0em 0em;
+		padding: 1em 0em 0em 0em;
+		background: #262626;
+		border-radius: 5px;
+		box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
+		line-height: normal;
+		text-align: center;
+		text-transform: uppercase;
+		text-shadow: 0px 1px 0px rgba(0,0,0,.2);
+		font-size: 1em;
+		font-weight: 400;
+		color: #FFF;
+	}
+	
+	ul.style3_h .date:after
+	{
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 6px;
+		background: url(images/bg01.png) repeat;
+	}
+	
+	ul.style3_h .date b
+	{
+		margin: 0;
+		padding: 0;
+		display: block;
+		font-size: 1.8em;
+		font-weight: 700;
+		color: #FFFFFF;
+	}
+	
+	ul.style3_h .date a
+	{
+		color: #FFFFFF !important;
+	}
+	
+	ul.style3_h .date a:hover
+	{
+		text-decoration: none;
+	}
+
 /*********************************************************************************/
 /* List Styles                                                                   */
 /*********************************************************************************/
@@ -133,7 +245,7 @@
 	
 	ul.style1 h3
 	{
-		padding: 1.2em 0em 5px 0em;
+		padding: 0em 0em 5px 0em;
 		letter-spacing: 0.10em;
 		text-transform: uppercase;
 		font-size: 1.1em;
@@ -166,8 +278,8 @@
 	{
 		overflow: hidden;
 		display: block;
-		padding: 1em 0em 0em 0em;
-		margin: 0 0 2em 0;
+		padding: 0em 0em 0em 0em;
+		margin: 0 0 1em 0;
 		border-top: 1px solid #D1CFCE;
 	}
 	
@@ -196,10 +308,10 @@
 	
 	ul.style3 h3
 	{
-		padding: 1.5em 0em 5px 0em;
+		padding: 0em 0em 0px 0em;
 		text-transform: uppercase;
-		font-size: 1.1em;
-		font-weight: 700;
+		font-size: 1em;
+		font-weight: 200;
 		color: #454445;
 	}
 	
@@ -215,7 +327,7 @@
 		position: relative;
 		width: 80px;
 		height: 70px;
-		margin: 1em 1.5em 0em 0em;
+		margin: 1em 1.0em 0em 0em;
 		padding: 1em 0em 0em 0em;
 		background: #262626;
 		border-radius: 5px;
@@ -225,7 +337,7 @@
 		text-transform: uppercase;
 		text-shadow: 0px 1px 0px rgba(0,0,0,.2);
 		font-size: 1em;
-		font-weight: 400;
+		font-weight: 20;
 		color: #FFF;
 	}
 	
@@ -247,8 +359,8 @@
 		margin: 0;
 		padding: 0;
 		display: block;
-		font-size: 1.8em;
-		font-weight: 700;
+		font-size: 0.6em;
+		font-weight: 10;
 		color: #FFFFFF;
 	}
 	
@@ -365,7 +477,7 @@
 
 	#wrapper
 	{
-		padding-top: 3em;
+		padding-top: 1em;
 		background: #EAE9E5;
 		border-top: 4px solid #319065;
 		border-bottom: 4px solid #319065;
@@ -378,7 +490,7 @@
 	#header
 	{
 		overflow: hidden;
-		padding: 2em 0em;
+		padding: 3em 0em;
 	}
 
 /*********************************************************************************/
@@ -399,7 +511,7 @@
 	#logo h1 {
 		line-height: 80px;
 		text-transform: uppercase;
-		font-size: 2.4em;
+		font-size: 3em;
 	}
 	
 	#logo h1 a {
@@ -499,7 +611,7 @@
 	{
 		overflow: hidden;
 		width: 1100px;
-		padding: 5em 50px;
+		padding: 1em 50px;
 	}
 	
 	#page h2
@@ -515,7 +627,7 @@
 	#content
 	{
 		float: left;
-		width: 500px;
+		width: 250px;
 	}
 
 /*********************************************************************************/
@@ -525,6 +637,13 @@
 	#sidebar
 	{
 		float: right;
+		width: 300px;
+	}
+
+
+	#sidebar_hist
+	{
+		float: left;
 		width: 500px;
 	}
 
@@ -542,8 +661,8 @@
 
 	#copyright
 	{
-		padding: 5em 0em;
-		font-size: 0.60em;
+		padding: 1em 0em;
+		font-size: 0.75em;
 		letter-spacing: 0.20em;
 		text-align: center;
 		text-transform: uppercase;
@@ -562,15 +681,15 @@
 	#welcome
 	{
 		width: 1100px;
-		margin-bottom: 5em;
+		margin-bottom: 0em;
 		padding: 0em 50px;
 	}
 
 	#welcome h2
 	{
-		margin: 1em 0em;
-		font-size: 2.7em;
-		font-weight: 700;
+		margin: 0em 0em;
+		font-size: 2.4em;
+		font-weight: 500;
 		color: #454445;
 	}
 
@@ -582,7 +701,7 @@
 	{
 		overflow: hidden;
 		background: #FFF;
-		border-bottom: 2px solid #CFCECD;
+		border-bottom: 5px solid #CFCECD;
 		text-align: center;
 		color: #525252;
 	}
@@ -607,7 +726,7 @@
 	{
 		float: left;
 		width: 300px;
-		padding: 80px 60px 80px 60px;
+		padding: 80px 50px 80px 50px;
 	}
 
 
@@ -651,6 +770,25 @@
 	border: none;
 	color: #FFFFFF;
 }
+
+
+
+
+.styled-select select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+   }
+
+
+
+
 
 
 
